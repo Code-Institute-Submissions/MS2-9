@@ -1,0 +1,113 @@
+/* Code taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 20px 0;
+  background: white;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.heading {
+    text-align: center;
+    font-size: 30px;
+}
+
+#game {
+    margin-bottom: 20px;
+}
+
+/* Code taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
+.grid {
+  max-width: 960px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+/* Code taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
+.card {
+  position: relative;
+  -webkit-transition: all .4s linear;
+  -o-transition: all .4s linear;
+  transition: all .4s linear;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  margin: 5px;
+}
+
+.card,
+.back,
+.front {
+  height: 150px;
+  width: 200px;
+}
+
+/* Code taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
+.back,
+.front {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+/* Code taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
+.front {
+  background: url('../images/useyourbrain.jpg') no-repeat center center / contain;
+}
+
+/* Code taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
+.back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Code taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
+.selected {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+/* Code taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
+.match .front {
+  background: white !important;
+}
+
+.level-dashboard {
+    margin: auto;
+    width: 840px;
+    height: 90px;
+}
+
+button {
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    float: left;
+}
+
+button:hover {
+        background-color: rgb(235, 32, 99);
+    }
+
+button:active {
+    border: none;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
