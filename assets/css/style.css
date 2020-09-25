@@ -46,16 +46,13 @@ body {
   margin: 5px;
 }
 
-.card,
-.back,
-.front {
+.card, .back, .front {
   height: 150px;
   width: 200px;
 }
 
 /* Code taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
-.back,
-.front {
+.back, .front {
   position: absolute;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -82,9 +79,9 @@ body {
 }
 
 /* Code taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
-/*.match .front {
-  background: white !important;
-}*/
+.match {
+  visibility: visible;
+}
 
 .scoreboard {
     height: 50px;
