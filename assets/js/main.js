@@ -1,5 +1,5 @@
+'use strict';
 //Card data
-
 const cardsArray = [
   {
     name: 'stormtrooper on sand',
@@ -25,10 +25,19 @@ const cardsArray = [
     name: 'r2d2',
     img: 'assets/images/lego06.jpg',
   },
+  {
+    name: 'stormtrooper on bike',
+    img: 'assets/images/lego07.jpg',
+  },
+  {
+    name: 'stormtrooper laughing',
+    img: 'assets/images/lego10.jpg',
+  },
 ]
 
 //Code below taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/
 
+//duplicates the cards to make 16 and shuffles cards
 var gameGrid = cardsArray.concat(cardsArray).sort(function () {
   return 0.5 - Math.random();
 });
@@ -47,6 +56,7 @@ game.appendChild(grid);
 gameGrid.forEach(function (item) {
   var name = item.name,
       img = item.img;
+
 
   var card = document.createElement('div');
   card.classList.add('card');

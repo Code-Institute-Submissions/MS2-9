@@ -12,21 +12,12 @@
         <h1>USE YOUR BRAIN!</h1>
         <h2>Click the cards to find the matching pair of images</h2>
     </div>
-    <div id="game"></div>
-    <div class="level-dashboard">
-    <!--Button code taken from https://www.w3schools.com/html/html_links.asp-->
-        <div>
-            <button onclick="index.html='default.asp'">Easy Level with 12 cards</button>
-        </div>
-        <div>
-            <button onclick="index.html='default.asp'">Medium Level with 16 cards</button>
-        </div>
-        <div>
-            <button onclick="index.html='default.asp'">Hard Level with 20 cards</button>
-        </div>
-    </div>
-    <div class="scoreboard">
-        <div></div>
+    <div id="game"></div> 
+
+     <div class="scoreboard">
+        <div class="move-counter">0 moves</div>
+        <div class="timer">00:00</div>
+        <button type="button" class="restart" onclick="">Restart</button> 
     </div>
     <script src="assets/js/main.js"></script>
 </body>

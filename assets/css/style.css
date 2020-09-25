@@ -82,32 +82,29 @@ body {
 }
 
 /* Code taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
-.match .front {
+/*.match .front {
   background: white !important;
+}*/
+
+.scoreboard {
+    height: 50px;
+    width: 650px;
+    margin : 0 auto;
+	padding : 5px;
+	display : flex;
+	flex-direction: row;
+	justify-content:space-between;
 }
 
-.level-dashboard {
-    margin: auto;
-    width: 840px;
-    height: 90px;
+.move-counter, .timer {
+    padding: 15px;
 }
 
-button {
-    font-family: 'Quicksand', sans-serif;
-    background-color: white;
-    font-size: 20px;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 10px;
-    float: left;
-}
-
-button:hover {
-        background-color: rgb(235, 32, 99);
-    }
-
-button:active {
+.restart {
     border: none;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+    background-color: white;
+    height: fit-content;
+    margin-top: 15px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
 }
