@@ -35,22 +35,25 @@ const cardsArray = [
   },
 ]
 
-//Code below taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/
+//Code below taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/ 
+//Where I modified the code it is marked with * and comments.
 
 //duplicates the cards to make 16 and shuffles cards
 var gameGrid = cardsArray.concat(cardsArray).sort(function () {
   return 0.5 - Math.random();
 });
 
-var firstGuess = '';
-var secondGuess = '';
-var count = 0;
-var previousTarget = null;
-var delay = 1200;
+//variables 
+let firstGuess = '';
+let secondGuess = '';
+let count = 0;
+let previousTarget = null;
+let delay = 1200;
+
 
 //creating divs for card images, displays images, DOM manipulation
-var game = document.getElementById('game');
-var grid = document.createElement('section');
+let game = document.getElementById('game');
+let grid = document.createElement('section');
 grid.setAttribute('class', 'grid');
 game.appendChild(grid);
 
@@ -75,7 +78,7 @@ gameGrid.forEach(function (item) {
   card.appendChild(back);
 });
 
-//
+//declaring match function
 var match = function match() {
   var selected = document.querySelectorAll('.selected');
   selected.forEach(function (card) {
@@ -83,6 +86,7 @@ var match = function match() {
   });
 };
 
+//declaring reset cards function
 var resetGuesses = function resetGuesses() {
   firstGuess = '';
   secondGuess = '';
@@ -95,6 +99,7 @@ var resetGuesses = function resetGuesses() {
   });
 };
 
+//calling match, reset functions
 grid.addEventListener('click', function (event) {
 
   var clicked = event.target;
@@ -102,28 +107,47 @@ grid.addEventListener('click', function (event) {
   if (clicked.nodeName === 'SECTION' || 
     clicked === previousTarget || 
     clicked.parentNode.classList.contains('selected') || 
-    clicked.parentNode.classList.contains('match')) {
+    clicked.parentNode.classList.contains('match'))  
+     {
     return;
   }
 
   if (count < 2) {
     count++;
+    moveCounter(); //*added to count number of moves
     if (count === 1) {
       firstGuess = clicked.parentNode.dataset.name;
-      console.log(firstGuess);
       clicked.parentNode.classList.add('selected');
-    } else {
+    } else {    
       secondGuess = clicked.parentNode.dataset.name;
-      console.log(secondGuess);
       clicked.parentNode.classList.add('selected');
     }
 
+
+    // delays for reset
     if (firstGuess && secondGuess) {
       if (firstGuess === secondGuess) {
-        setTimeout(match, delay); 
+        setTimeout(match); //*no need for 'delay' as keeping matched cards visible
       }
       setTimeout(resetGuesses, delay);
     }
     previousTarget = clicked;
   }
 });
+
+//*counts the number of moves
+let moves = 0;
+let counter = document.querySelector(".moves");
+//*initialising move counter function
+function moveCounter() {
+    moves++;
+    counter.innerHTML = moves + ' moves';
+};
+
+
+   /* if(moves == 1) {
+        second = 0;
+        minute = 0;
+        hour = 0;
+        startTimer();
+    }*/
