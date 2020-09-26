@@ -48,6 +48,7 @@ var count = 0;
 var previousTarget = null;
 var delay = 1200;
 
+//creating divs for card images, displays images, DOM manipulation
 var game = document.getElementById('game');
 var grid = document.createElement('section');
 grid.setAttribute('class', 'grid');
@@ -56,7 +57,6 @@ game.appendChild(grid);
 gameGrid.forEach(function (item) {
   var name = item.name,
       img = item.img;
-
 
   var card = document.createElement('div');
   card.classList.add('card');
@@ -69,11 +69,13 @@ gameGrid.forEach(function (item) {
   back.classList.add('back');
   back.style.backgroundImage = 'url(' + img + ')';
 
+  //appends divs to the grid
   grid.appendChild(card);
   card.appendChild(front);
   card.appendChild(back);
 });
 
+//
 var match = function match() {
   var selected = document.querySelectorAll('.selected');
   selected.forEach(function (card) {
@@ -118,7 +120,7 @@ grid.addEventListener('click', function (event) {
 
     if (firstGuess && secondGuess) {
       if (firstGuess === secondGuess) {
-        setTimeout(match, delay);
+        setTimeout(match, delay); 
       }
       setTimeout(resetGuesses, delay);
     }
