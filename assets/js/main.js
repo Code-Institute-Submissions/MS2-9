@@ -38,11 +38,6 @@ const cardsArray = [
 //Code below taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/ 
 //Where I modified the code it is marked with * and comments.
 
-//duplicates the cards to make 16 and shuffles cards
-var gameGrid = cardsArray.concat(cardsArray).sort(function () {
-  return 0.5 - Math.random();
-});
-
 //variables 
 let firstGuess = '';
 let secondGuess = '';
@@ -51,6 +46,14 @@ let previousTarget = null;
 let delay = 1200;
 
 
+//duplicates the cards to make 16 and shuffles cards
+var gameGrid = cardsArray.concat(cardsArray).sort(function () {
+  return 0.5 - Math.random();
+});
+
+document.body.onload = startGame();
+
+function startGame() {
 //creating divs for card images, displays images, DOM manipulation
 let game = document.getElementById('game');
 let grid = document.createElement('section');
@@ -115,6 +118,8 @@ grid.addEventListener('click', function (event) {
   if (count < 2) {
     count++;
     moveCounter(); //*added to count number of moves
+    startTimer(); //*starts timer
+    
     if (count === 1) {
       firstGuess = clicked.parentNode.dataset.name;
       clicked.parentNode.classList.add('selected');
@@ -134,20 +139,43 @@ grid.addEventListener('click', function (event) {
     previousTarget = clicked;
   }
 });
+ 
 
 //*counts the number of moves
 let moves = 0;
 let counter = document.querySelector(".moves");
-//*initialising move counter function
+//* move counter function
 function moveCounter() {
     moves++;
     counter.innerHTML = moves + ' moves';
 };
-
-
-   /* if(moves == 1) {
+    if(moves == 1) {
         second = 0;
         minute = 0;
-        hour = 0;
-        startTimer();
-    }*/
+    };
+
+//*timer
+var second = 0, minute = 0;
+var timer = document.querySelector(".timer");
+var interval;
+function startTimer(){
+    interval = setInterval(function(){
+        timer.innerHTML = minute + ":" + second;
+        second++;
+        if(second == 60){
+            minute++;
+            second = 0;
+        }
+    },1000);
+};
+
+// reset moves
+    moves = 0;
+    counter.innerHTML = moves + ' moves';
+    //reset timer
+    second = 0;
+    minute = 0; 
+    document.querySelector('.timer').innerHTML = "00:00";
+    counter.innerHTML = moves + ' moves';
+    clearInterval(interval);
+};
