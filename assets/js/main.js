@@ -1,4 +1,4 @@
-'use strict';
+
 //Card data
 const cardsArray = [
   {
@@ -51,7 +51,7 @@ var gameGrid = cardsArray.concat(cardsArray).sort(function () {
   return 0.5 - Math.random();
 });
 
-document.body.onload = startGame();
+window.onload = startGame();
 
 function startGame() {
 //creating divs for card images, displays images, DOM manipulation
@@ -79,7 +79,7 @@ gameGrid.forEach(function (item) {
   grid.appendChild(card);
   card.appendChild(front);
   card.appendChild(back);
-});
+    });
 
 //declaring match function
 var match = function match() {
@@ -128,7 +128,6 @@ grid.addEventListener('click', function (event) {
       clicked.parentNode.classList.add('selected');
     }
 
-
     // delays for reset
     if (firstGuess && secondGuess) {
       if (firstGuess === secondGuess) {
@@ -139,7 +138,7 @@ grid.addEventListener('click', function (event) {
     previousTarget = clicked;
   }
 });
- 
+}
 
 //*counts the number of moves
 let moves = 0;
@@ -149,10 +148,10 @@ function moveCounter() {
     moves++;
     counter.innerHTML = moves + ' moves';
 };
-    if(moves == 1) {
+   /* if(moves == 1) {
         second = 0;
         minute = 0;
-    };
+    };*/
 
 //*timer
 var second = 0, minute = 0;
@@ -160,22 +159,17 @@ var timer = document.querySelector(".timer");
 var interval;
 function startTimer(){
     interval = setInterval(function(){
-        timer.innerHTML = minute + ":" + second;
+        timer.innerHTML = minute + ':' + second;
+        
         second++;
         if(second == 60){
             minute++;
             second = 0;
         }
+        if(minute == 60){
+            hour++;
+            minute = 0;
+        }
     },1000);
-};
+}
 
-// reset moves
-    moves = 0;
-    counter.innerHTML = moves + ' moves';
-    //reset timer
-    second = 0;
-    minute = 0; 
-    document.querySelector('.timer').innerHTML = "00:00";
-    counter.innerHTML = moves + ' moves';
-    clearInterval(interval);
-};
