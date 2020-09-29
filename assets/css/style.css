@@ -58,7 +58,6 @@ body {
           backface-visibility: hidden;
 }
 
-/* Code taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
 .front {
   background: url('../images/useyourbrain.jpg') no-repeat center center / contain;
 }

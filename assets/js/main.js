@@ -41,37 +41,36 @@ const cardsArray = [
 //variables 
 let firstGuess = '';
 let secondGuess = '';
-let count = 0;
+let count = 0; //stores the count
 let previousTarget = null;
 let delay = 1200;
-
+// Record current timer state (on or off)
+let timerOn = false;
 
 //duplicates the cards to make 16 and shuffles cards
 var gameGrid = cardsArray.concat(cardsArray).sort(function () {
   return 0.5 - Math.random();
 });
 
-window.onload = startGame();
 
-function startGame() {
 //creating divs for card images, displays images, DOM manipulation
 let game = document.getElementById('game');
 let grid = document.createElement('section');
 grid.setAttribute('class', 'grid');
 game.appendChild(grid);
 
-gameGrid.forEach(function (item) {
-  var name = item.name,
+gameGrid.forEach(function(item)  {
+  let name = item.name,
       img = item.img;
 
-  var card = document.createElement('div');
+  let card = document.createElement('div');
   card.classList.add('card');
   card.dataset.name = name;
 
-  var front = document.createElement('div');
+  let front = document.createElement('div');
   front.classList.add('front');
 
-  var back = document.createElement('div');
+  let back = document.createElement('div');
   back.classList.add('back');
   back.style.backgroundImage = 'url(' + img + ')';
 
@@ -82,44 +81,74 @@ gameGrid.forEach(function (item) {
     });
 
 //declaring match function
-var match = function match() {
-  var selected = document.querySelectorAll('.selected');
+let match = function match() {
+  let selected = document.querySelectorAll('.selected');
   selected.forEach(function (card) {
     card.classList.add('match');
   });
 };
 
 //declaring reset cards function
-var resetGuesses = function resetGuesses() {
+let resetGuesses = function resetGuesses() {
   firstGuess = '';
   secondGuess = '';
   count = 0;
   previousTarget = null;
 
-  var selected = document.querySelectorAll('.selected');
+  let selected = document.querySelectorAll('.selected');
   selected.forEach(function (card) {
     card.classList.remove('selected');
   });
 };
 
+//*counts the number of moves
+let moves = 0;
+let counter = document.querySelector(".moves");
+//* move counter function
+function moveCounter() {
+    moves++;
+    counter.innerHTML = moves + ' moves';
+    
+};
+   if(moves === 1) {
+        second = 0;
+        minute = 0;
+        hour = 0;
+    };
+
+//*timer
+let time = 0;
+    function startTimer() {
+    timer = setInterval(function() {
+    time++;
+    minutes = ("0" + Math.floor(time / 60)).slice(-2);
+    seconds = ("0" + time % 60).slice(-2);
+    document.querySelector('.timer').innerHTML = minutes + ":" + seconds;
+  }, 1000);
+}
+
+
 //calling match, reset functions
 grid.addEventListener('click', function (event) {
 
-  var clicked = event.target;
+  let clicked = event.target;
+   // *Start the timer on the first click
+    if (timerOn === false) {
+      startTimer();
+      timerOn = true;
+    }
 
   if (clicked.nodeName === 'SECTION' || 
     clicked === previousTarget || 
     clicked.parentNode.classList.contains('selected') || 
     clicked.parentNode.classList.contains('match'))  
      {
-    return;
+    return; // stops function
   }
 
   if (count < 2) {
     count++;
     moveCounter(); //*added to count number of moves
-    startTimer(); //*starts timer
-    
     if (count === 1) {
       firstGuess = clicked.parentNode.dataset.name;
       clicked.parentNode.classList.add('selected');
@@ -138,38 +167,3 @@ grid.addEventListener('click', function (event) {
     previousTarget = clicked;
   }
 });
-}
-
-//*counts the number of moves
-let moves = 0;
-let counter = document.querySelector(".moves");
-//* move counter function
-function moveCounter() {
-    moves++;
-    counter.innerHTML = moves + ' moves';
-};
-   /* if(moves == 1) {
-        second = 0;
-        minute = 0;
-    };*/
-
-//*timer
-var second = 0, minute = 0;
-var timer = document.querySelector(".timer");
-var interval;
-function startTimer(){
-    interval = setInterval(function(){
-        timer.innerHTML = minute + ':' + second;
-        
-        second++;
-        if(second == 60){
-            minute++;
-            second = 0;
-        }
-        if(minute == 60){
-            hour++;
-            minute = 0;
-        }
-    },1000);
-}
-
