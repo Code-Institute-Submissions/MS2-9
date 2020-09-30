@@ -48,9 +48,8 @@ let delay = 1200;
 let timerOn = false;
 
 //duplicates the cards to make 16 and shuffles cards
-var gameGrid = cardsArray.concat(cardsArray).sort(function () {
-  return 0.5 - Math.random();
-});
+let gameGrid = cardsArray.concat(cardsArray);
+gameGrid.sort(() => 0.5 - Math.random());
 
 
 //creating divs for card images, displays images, DOM manipulation
@@ -101,28 +100,39 @@ let resetGuesses = function resetGuesses() {
   });
 };
 
+//declaring restart game function
+let startGame = function startGame() {
+    moves = 0;
+    document.querySelector('.moves').innerHTML = moves + ' moves';
+    timer = 0;
+    time = 0;
+    minutes = 0;
+    seconds = 0; 
+    document.querySelector('.timer').innerHTML = "0" + minutes + ":" + "0" + seconds;
+    clearInterval(timer);
+    timerOn = false;
+    firstGuess = '';
+    secondGuess = '';
+      
+}
+
 //*counts the number of moves
 let moves = 0;
 let counter = document.querySelector(".moves");
 //* move counter function
 function moveCounter() {
     moves++;
-    counter.innerHTML = moves + ' moves';
-    
+    counter.innerHTML = moves + ' moves'; 
 };
-   if(moves === 1) {
-        second = 0;
-        minute = 0;
-        hour = 0;
-    };
 
 //*timer
 let time = 0;
+let timer; //stores the setInterval
     function startTimer() {
     timer = setInterval(function() {
     time++;
     minutes = ("0" + Math.floor(time / 60)).slice(-2);
-    seconds = ("0" + time % 60).slice(-2);
+    seconds = ("0" + time % 60).slice(-2); 
     document.querySelector('.timer').innerHTML = minutes + ":" + seconds;
   }, 1000);
 }
@@ -148,7 +158,7 @@ grid.addEventListener('click', function (event) {
 
   if (count < 2) {
     count++;
-    moveCounter(); //*added to count number of moves
+    moveCounter(); //*added to count number of moves at first click
     if (count === 1) {
       firstGuess = clicked.parentNode.dataset.name;
       clicked.parentNode.classList.add('selected');
