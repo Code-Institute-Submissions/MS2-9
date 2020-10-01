@@ -102,18 +102,15 @@ let resetGuesses = function resetGuesses() {
 
 //declaring restart game function
 let startGame = function startGame() {
+    //stops and resets moves
     moves = 0;
     document.querySelector('.moves').innerHTML = moves + ' moves';
-    timer = 0;
+    //stops timer
     time = 0;
     minutes = 0;
     seconds = 0; 
     document.querySelector('.timer').innerHTML = "0" + minutes + ":" + "0" + seconds;
     clearInterval(timer);
-    timerOn = false;
-    firstGuess = '';
-    secondGuess = '';
-      
 }
 
 //*counts the number of moves
