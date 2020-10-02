@@ -1,5 +1,5 @@
 
-//Card data
+//*Card data
 const cardsArray = [
   {
     name: 'stormtrooper on sand',
@@ -36,9 +36,10 @@ const cardsArray = [
 ]
 
 //Code below taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/ 
-//Where I modified the code it is marked with * and comments.
+//Where I modified the code it is marked with *.
 
 //variables 
+
 let firstGuess = '';
 let secondGuess = '';
 let count = 0; //stores the count
@@ -46,6 +47,7 @@ let previousTarget = null;
 let delay = 1200;
 // Record current timer state (on or off)
 let timerOn = false;
+let matchedPair = 0;
 
 //duplicates the cards to make 16 and shuffles cards
 let gameGrid = cardsArray.concat(cardsArray);
@@ -79,11 +81,12 @@ gameGrid.forEach(function(item)  {
   card.appendChild(back);
     });
 
-//declaring match function
+//*declaring match function
 let match = function match() {
-  let selected = document.querySelectorAll('.selected');
-  selected.forEach(function (card) {
+  let matchedPair = document.querySelectorAll('.selected');
+    matchedPair.forEach(function (card) {
     card.classList.add('match');
+    matchedPair = [];
   });
 };
 
@@ -99,19 +102,6 @@ let resetGuesses = function resetGuesses() {
     card.classList.remove('selected');
   });
 };
-
-//declaring restart game function
-let startGame = function startGame() {
-    //stops and resets moves
-    moves = 0;
-    document.querySelector('.moves').innerHTML = moves + ' moves';
-    //stops timer
-    time = 0;
-    minutes = 0;
-    seconds = 0; 
-    document.querySelector('.timer').innerHTML = "0" + minutes + ":" + "0" + seconds;
-    clearInterval(timer);
-}
 
 //*counts the number of moves
 let moves = 0;
@@ -135,27 +125,27 @@ let timer; //stores the setInterval
 }
 
 
-//calling match, reset functions
+//create click event listener, calling match, reset functions
 grid.addEventListener('click', function (event) {
 
-  let clicked = event.target;
+  let clicked = event.target; //any element that has been clicked 
    // *Start the timer on the first click
     if (timerOn === false) {
       startTimer();
       timerOn = true;
     }
 
-  if (clicked.nodeName === 'SECTION' || 
-    clicked === previousTarget || 
-    clicked.parentNode.classList.contains('selected') || 
-    clicked.parentNode.classList.contains('match'))  
+  if (clicked.nodeName === 'SECTION' || //selects divs inside the grid section
+    clicked === previousTarget || //ignore if the same card is clicked again
+    clicked.parentNode.classList.contains('selected') || //stops already selected cards to flip over
+    clicked.parentNode.classList.contains('match')) //stops matched cards to flip over if clicked again
      {
     return; // stops function
   }
 
   if (count < 2) {
     count++;
-    moveCounter(); //*added to count number of moves at first click
+    moveCounter(); //*to count number of moves at first click
     if (count === 1) {
       firstGuess = clicked.parentNode.dataset.name;
       clicked.parentNode.classList.add('selected');
@@ -164,13 +154,45 @@ grid.addEventListener('click', function (event) {
       clicked.parentNode.classList.add('selected');
     }
 
-    // delays for reset
+    // call match function, delays for reset
     if (firstGuess && secondGuess) {
       if (firstGuess === secondGuess) {
-        setTimeout(match); //*no need for 'delay' as keeping matched cards visible
+        match(); //* calling match function modified as no need for delay, keeping matched cards visible
       }
       setTimeout(resetGuesses, delay);
     }
     previousTarget = clicked;
   }
 });
+
+//*stop timer when all cards are matched
+    if (matchedPair.length === 8) {
+       clearInterval(timer);
+    };
+
+//*declaring restart game function
+let startGame = function startGame() {
+    //shuffles cards
+    let gameGrid = cardsArray.concat(cardsArray);
+    gameGrid.sort(() => 0.5 - Math.random());
+    
+    //stops and resets moves
+    moves = 0;
+    document.querySelector('.moves').innerHTML = moves + ' moves';
+    
+    //stops timer
+    time = 0;
+    minutes = 0;
+    seconds = 0; 
+    document.querySelector('.timer').innerHTML = "0" + minutes + ":" + "0" + seconds;
+    clearInterval(timer);
+    timerOn = false; //stops timer
+    
+    //flips over matched cards
+    let resetMatched = document.querySelectorAll('.match');
+    resetMatched.forEach(function (card) {
+    card.classList.remove('match');
+  });
+}
+
+ 
