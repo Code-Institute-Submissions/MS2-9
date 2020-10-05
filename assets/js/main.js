@@ -146,8 +146,8 @@ let timer; //stores the setInterval
  function victoryPopUp(moves, time) {
   let popUp = document.querySelector('.popUp');
   popUp.style.visibility = "visible";
-  popUp.querySelector('.popUpText').innerHTML = generateComment(moves);
   popUp.querySelector('.popUpTime').innerHTML = "You won the game in " + time + " seconds!";
+  popUp.querySelector('.popUpMoves').innerHTML = "You made " + moves + " moves!"
 };
 
 //create click event listener, calling match, reset functions
@@ -189,6 +189,12 @@ grid.addEventListener('click', function (event) {
     }
     previousTarget = clicked;
   }
+  // Check for the winning condition:
+    if (matchCount === 8) {
+      victoryPopUp(moves, time);
+      clearInterval(timer);
+      timerOn = false;
+    }
 });
 
 //*declaring restart game function
@@ -218,9 +224,3 @@ let startGame = function startGame() {
   });*/
 }
 
-// Check for the winning condition:
-    if (matchCount === 8) {
-      winningPopUp(moves, time);
-      clearInterval(timer);
-      timerOn = false;
-    }
