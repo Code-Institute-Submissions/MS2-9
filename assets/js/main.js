@@ -47,12 +47,11 @@ let previousTarget = null;
 let delay = 1200;
 // Record current timer state (on or off)
 let timerOn = false;
-let matchedPair = 0;
+let matchCount = 0;
 
 //duplicates the cards to make 16 and shuffles cards
 let gameGrid = cardsArray.concat(cardsArray);
 gameGrid.sort(() => 0.5 - Math.random());
-
 
 //creating divs for card images, displays images, DOM manipulation
 let game = document.getElementById('game');
@@ -81,12 +80,31 @@ gameGrid.forEach(function(item)  {
   card.appendChild(back);
     });
 
+//declaring shuffle function code taken from https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+/*function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}*/
+
 //*declaring match function
 let match = function match() {
-  let matchedPair = document.querySelectorAll('.selected');
-    matchedPair.forEach(function (card) {
+    matched = document.querySelectorAll('.selected');
+    matched.forEach(function (card) {
     card.classList.add('match');
-    matchedPair = [];
   });
 };
 
@@ -124,6 +142,13 @@ let timer; //stores the setInterval
   }, 1000);
 }
 
+//function for finishing game
+ function victoryPopUp(moves, time) {
+  let popUp = document.querySelector('.popUp');
+  popUp.style.visibility = "visible";
+  popUp.querySelector('.popUpText').innerHTML = generateComment(moves);
+  popUp.querySelector('.popUpTime').innerHTML = "You won the game in " + time + " seconds!";
+};
 
 //create click event listener, calling match, reset functions
 grid.addEventListener('click', function (event) {
@@ -157,6 +182,7 @@ grid.addEventListener('click', function (event) {
     // call match function, delays for reset
     if (firstGuess && secondGuess) {
       if (firstGuess === secondGuess) {
+        matchCount++
         match(); //* calling match function modified as no need for delay, keeping matched cards visible
       }
       setTimeout(resetGuesses, delay);
@@ -165,34 +191,36 @@ grid.addEventListener('click', function (event) {
   }
 });
 
-//*stop timer when all cards are matched
-    if (matchedPair.length === 8) {
-       clearInterval(timer);
-    };
-
 //*declaring restart game function
+function reloadGame(){
+    window.location.reload();
+} 
+
 let startGame = function startGame() {
-    //shuffles cards
-    let gameGrid = cardsArray.concat(cardsArray);
-    gameGrid.sort(() => 0.5 - Math.random());
+   reloadGame();
     
     //stops and resets moves
-    moves = 0;
+    /*moves = 0;
     document.querySelector('.moves').innerHTML = moves + ' moves';
     
     //stops timer
-    time = 0;
+   /* time = 0;
     minutes = 0;
     seconds = 0; 
     document.querySelector('.timer').innerHTML = "0" + minutes + ":" + "0" + seconds;
     clearInterval(timer);
-    timerOn = false; //stops timer
+    timerOn = false; //stops timer */
     
     //flips over matched cards
-    let resetMatched = document.querySelectorAll('.match');
+   /* let resetMatched = document.querySelectorAll('.match');
     resetMatched.forEach(function (card) {
     card.classList.remove('match');
-  });
+  });*/
 }
 
- 
+// Check for the winning condition:
+    if (matchCount === 8) {
+      winningPopUp(moves, time);
+      clearInterval(timer);
+      timerOn = false;
+    }
