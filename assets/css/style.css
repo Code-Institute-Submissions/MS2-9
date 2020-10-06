@@ -7,9 +7,9 @@
 }
 
 body {
-  margin: 20px 0;
-  background: white;
-  font-family: 'Quicksand', sans-serif;
+    margin: 20px 0;
+    background: white;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .heading {
@@ -43,7 +43,7 @@ body {
   transition: all .4s linear;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  margin: 5px;
+  margin: 2px;
 }
 
 .card, .back, .front {
@@ -158,3 +158,84 @@ body {
   cursor: pointer;
 }
 
+/* -------------MEDIA QUERIES---------------*/
+/* FOR PHONES */
+
+@media (max-width: 414px) {
+	.grid {
+		width: 350px;
+    
+	}
+    .card, .back, .front {
+        width: 150px;
+        height: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin: 2px;
+    }
+
+    .scoreboard {
+        width: 350px;
+        height: 50px;
+        padding: 15px;
+    }
+
+    #game {
+    margin-bottom: 5px;
+    }
+}
+
+/* FOR TABLETS */
+
+@media (min-width: 768px) {
+	.grid {
+		width: 500px;
+	}
+
+    .heading {
+        width: 500px;
+        margin: auto;
+    }
+    .card, .back, .front {
+        width: 120px;
+        height: 90px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin: 2px;
+    }
+
+    .scoreboard {
+        width: 500px;
+        height: 50px;
+        padding: 15px;
+    }
+
+    #game {
+    margin-bottom: 5px;
+    }
+}
+
+/* FOR SCREENS 1068px AND LARGER*/
+
+@media (min-width: 1068px) {
+    .grid {
+        width: 960px;
+    }
+
+    .heading {
+        width: auto;
+    }
+
+    .card, .back, .front {
+        height: 150px;
+        width: 200px;
+    }
+    .scoreboard {
+    height: 50px;
+    width: 650px;
+    margin : 0 auto;
+	padding : 15px;
+    }
+}
