@@ -184,6 +184,15 @@ body {
     #game {
     margin-bottom: 5px;
     }
+
+    .popUp {
+        width: 350px;
+        height: 400px;
+    }
+
+    .playAgain {
+        margin-left: 70px;
+    }
 }
 
 /* FOR TABLETS */
