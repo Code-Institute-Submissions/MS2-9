@@ -146,7 +146,7 @@ let timer; //stores the setInterval
  function victoryPopUp(moves, time) {
   let popUp = document.querySelector('.popUp');
   popUp.style.visibility = "visible";
-  popUp.querySelector('.popUpTime').innerHTML = "You won the game in " + time + " seconds!";
+  popUp.querySelector('.popUpTime').innerHTML = "You won the game in " + minutes + " mins and " + seconds + " secs!";
   popUp.querySelector('.popUpMoves').innerHTML = "You made " + moves + " moves!"
 };
 
