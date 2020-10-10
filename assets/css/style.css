@@ -164,8 +164,12 @@ body {
 @media (max-width: 414px) {
 	.grid {
 		width: 350px;
-    
 	}
+
+    .heading {
+        margin-left: 15px; 
+    }
+    
     .card, .back, .front {
         width: 150px;
         height: 100px;
@@ -179,6 +183,14 @@ body {
         width: 350px;
         height: 50px;
         padding: 15px;
+    }
+
+    .restart {
+        margin-top: 0;
+    }
+
+    .timer {
+        padding: 0;
     }
 
     #game {
@@ -199,7 +211,7 @@ body {
 
 @media (min-width: 768px) {
 	.grid {
-		width: 500px;
+		width: 600px;
 	}
 
     .heading {
@@ -221,6 +233,14 @@ body {
         padding: 15px;
     }
 
+    .restart {
+        margin-top: 0;
+    }
+
+    .timer {
+        padding: 0;
+    }
+
     #game {
         margin-bottom: 5px;
     }
@@ -228,7 +248,7 @@ body {
 
 /* FOR SCREENS 1068px AND LARGER*/
 
-@media (min-width: 1068px) {
+@media (min-width: 1024px) {
     .grid {
         width: 960px;
     }
