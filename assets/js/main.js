@@ -35,40 +35,6 @@ const cardsArray = [
   },
 ];
 
-/*const cardsArray02 = [
-  {
-    name: 'darth vader torturing stormtrooper',
-    img: 'assets/images/lego09.jpg',
-  },
-  {
-    name: 'two stormtroopers',
-    img: 'assets/images/lego10.jpg',
-  },
-  {
-    name: 'darth vader the artist',
-    img: 'assets/images/lego11.jpg',
-  },
-  {
-    name: 'stormtrooper watching laptop',
-    img: 'assets/images/lego12.jpg',
-  },
-  {
-    name: 'space ship',
-    img: 'assets/images/lego13.jpg',
-  },
-  {
-    name: 'stormtroopers and coffee',
-    img: 'assets/images/lego14.jpg',
-  },
-  {
-    name: 'stormtrooper couple',
-    img: 'assets/images/lego15.jpg',
-  },
-  {
-    name: 'darth vader pushing wheelchair',
-    img: 'assets/images/lego16.jpg',
-  },
-];*/
 //Declaring global variables 
 
 let firstGuess = '';

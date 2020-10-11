@@ -112,6 +112,11 @@ h2 {
     color: #0aa2dc;
 }
 
+.restart:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
 .popUp {
     background-color: #FFFFFF;
     font-family: 'Quicksand', sans-serif;

@@ -17,8 +17,8 @@ Reasons users may be want to play this game:
 # UX
 
 A simple and clean looking website that introduces the user to a single player memory card game consisting of one page:
-- A black and white, clean, simple look, with succinct instructions and once you start playing the game the colours of the
-images comes through. 
+- A clean, simple look, with succinct instructions.
+- The cards are quite large in order to enjoy the images better.
 - When the player has finished/won the game, a popup modal matching the colours of the images appears
 giving the user the time it took for them to finish and how many moves they made and the choice to play again.
 - At the bottom of the card images is a simple  and clean row of a moves counter, minutes and seconds timer and the restart
@@ -57,9 +57,10 @@ they get distracted during the game, get frustrated, or leave the game for any o
 
 - As a user, I want simple instructions.
 
-The user’s goals can be met via this website as it gives a fun and interesting.
+The user’s goals can be met via this website as it is a simple game with fun and interesting images.
 
 It is easy to navigate with one page, simple, clear and succinct instructions and self explanatory restart button.
+
 ## Wireframes
 I used [Pencil](https://pencil.evolus.vn/) to create
 [wireframes](https://github.com/karzuin/MS2/tree/master/wireframes) in desktop, tablet and phone view.
@@ -225,83 +226,26 @@ on how to deploy to Github pages.
 
 ### Content
 
-#### Text for the home.html:
+#### Text for the index.html:
 
-- About Us is written by me.
-
-- Why live in an eco home text from [Off Grid World](https://offgridworld.com).
-
-- Brief description of earthships from [Low Carbon](http://lowcarbon.co.uk/earthship-brighton/earthships).
-
-- Brief description of shipping container homes from [Mobilbox](https://mobilbox.co.uk).
-
-- Tiny house brief description taken from [Living Big in a Tiny House](https://www.livingbiginatinyhouse.com/tiny-house/).
-
-- Brief description of off the grid living taken from [The Smart Survivalist](https://www.thesmartsurvivalist.com/uk-off-grid-living-here-is-how-it-can-be-done/).
-
-- Brief description of zero waste living from [Mother Earth Living](https://www.motherearthliving.com/healthy-home/zero-waste-living-zmfz15jfhou).
-
-- Brief description of eco home products from [Onyalife](https://www.onyalife.com/eco-friendly-products/).
-
-- The text for the resources page and contact us page is written by me.
+- Is written by me.
 
 ### Media
 
-#### Images for home.html:
+#### Images for index.html:
 
-- Hero image from [Free Images](https://www.freeimages.com/photo/falloxbow-1058032).
-
-- Image of earthship from [Love Incorporated](https://loveincorporated.blob.core.windows.net/contentimages/gallery/e6d541f3-3496-429b-8bfa-f6a69001b9f0-the-waybee.jpg).
-
-- Image of tiny house from [The Plaid Zebra](https://theplaidzebra.com/wp-content/uploads/2017/02/Screen-Shot-2017-02-16-at-4.08.29-PM.png).
-
-- Image of shipping container from [Container Conversion DB](https://lh3.googleusercontent.com/D2U8cgBhX-EhYfKskQoIYtzVOovVaKPD2SmQ7A1fJsCG36i6taJ31IKYBINjuyuXlSxLYLmCOfrwY28xNHp3FQ=s0).
-
-- Image for off the grid living [Inhabitat](https://inhabitat.com/solar-powered-forever-home-is-a-modern-take-on-the-rustic-farmhouse/horseshoe-farm-residence-by-buildsense-9/).
-
-- Image for Zero Waste Living [Clean Eating Mag](https://www.cleaneatingmag.com/clean-living/how-to-live-a-zero-waste-life).
-
-- Image for Eco home products [The Lady](https://lady.co.uk/housekeeping-top-tips-eco-cleaning).
-
-#### Images for resources.html:
-
-- Hero image is from [Pixabay](https://pixabay.com/photos/light-bulbs-chosen-bulb-light-1875384/).
-
-#### Video links for resources.html:
-
-All video links are from [You Tube](https://youtube.com):
-
-- [Earthships](https://youtu.be/TlntQ9EgOxg)
-
-- [Tiny Homes](https://youtu.be/DGLciRYShx4)
-
-- [Shipping Container Homes](https://youtu.be/iyhQb4Sd-Z4).
-
-#### Book images for resources.html: 
-
-- Images and 'To Buy' links are taken from [Amazon](https://amazon.co.uk).
-
-- Website link [Zero Waste Home](https://zerowastehome.com/).
-
-#### Image for contact.html:
-
-- Hero Image for eco home is from [Airbnb](https://www.airbnb.com.au/rooms/16597158?source_impression_id=p3_1589312704_okoQxq9mJ8dwByxV&guests=1&adults=1).
+- Card images from [Unsplash](https://unsplash.com/@danielkcheung)
 
 ### Code
 
-The code for my footer social links were copied from Code Institute source code for the resume project in the user centric frontend 
-development module.
+- The memory card game template code is from [Tania Rascia](https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/)
 
-[CI](https://codeinstitute.net/) tutor helped me clarify what code to use for column sizes and directed me to [W3 Schools](https://www.w3schools.com/cssref/pr_background-image.asp)
- to help with background image responsiveness. So I was able to make all the hero images on all three pages responsive.
+- [W3 Schools](https://www.w3schools.com/css/css3_3dtransforms.asp) to keep cards visible when matched.
 
-Used code from [CSS Tricks](https://css-tricks.com/books/fundamental-css-tactics/scale-typography-screen-size/) to help with font-size responsiveness.
+- [Stack Overflow](https://stackoverflow.com/questions/952924/javascript-chop-slice-trim-off-last-character-in-string) 
+to use slice method for timer.
 
-Mentor shared a link from [Stack Overflow](https://stackoverflow.com/questions/34284976/blank-space-right-side-screen-on-small-device-or-window/34285689#34285689?newreg=609753b69d114fe8855ce8929c156ee3) 
-to help rectify the white space on the right of the screen when in mobile phone view. 
 
 # Acknowledgements
 
-I received inspiration for this project from when I created a webpage about eco homes and wanted to expand to make it a website.
-
-Also thank you to the [Code Institute](https://codeinstitute.net/) slack channel, many [CI](https://codeinstitute.net/) tutors and mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/).
+Also thank you to the [Code Institute](https://codeinstitute.net/) slack channel, [CI](https://codeinstitute.net/) tutors and mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/).
