@@ -3,7 +3,7 @@
 
 # <p align="center">Memory Card Game For All</p>
 
-A memory card game featuring star war characters in lego form which I found amusing, fun and cute. The game is for users of all ages who 
+A memory card game featuring images of Star Wars characters in lego form which I found amusing, fun and cute. The game is for users of all ages who 
 would like to improve their memory whilst also enjoy looking at the images too.
 The website consists of the main page with beautiful quality photos, pleasing to the eye, inspiring to look at and simple, not too 
 much text, as for myself I don’t like busy looking websites, I like simplicity and beauty. As too much information gets confusing, messy 
@@ -62,8 +62,7 @@ The user’s goals can be met via this website as it is a simple game with fun a
 It is easy to navigate with one page, simple, clear and succinct instructions and self explanatory restart button.
 
 ## Wireframes
-I used [Pencil](https://pencil.evolus.vn/) to create
-[wireframes](https://github.com/karzuin/MS2/tree/master/wireframes) in desktop, tablet and phone view.
+I used [Pencil](https://pencil.evolus.vn/) to create [wireframes]() in desktop, tablet and phone view.
 
 # Features
 
@@ -102,22 +101,13 @@ that their email address will not be shared with others. A ‘Sign Up!’ Button
 If the user clicks the button without entering a valid email address it gives a message to fill in the appropriate field. When user hovers 
 over the button it goes a darker green in colour.
 
-At the bottom of the page is a neat row of social links consisting of Facebook, Twitter, Instagram and Youtube and underneath is
-the copyright information.
-
-
+At the bottom of the page is the copyright information.
 
 # Features Left to Implement
 
-- To be able to actually submit the forms and give an email confirmation that the information was received and welcoming the user to the 
-Greener Homes community.
+- To be able to have difficulty levels, with harder images to memorise and more cards to match.
 
-- Community blog page where other users can share their experiences of buying, building eco homes from different companies, or how they 
-did it themselves. Shared experiences and connecting users to how they integrate zero waste living, or off the grid living and recommend 
-eco home products.
-
-- Real social media accounts.
-
+- To keep your score and try to beat it next time.
 
 # Technologies Used
 
@@ -147,9 +137,6 @@ eco home products.
 
 - [Google Fonts](https://fonts.google.com/) 
   - This is used to choose a font style for the website that is simple and modern, found and using Open-Sans font family.
-
-- [YouTube](https://youtube.com) 
-  - Videos from this website were embedded on the resource page.
 
 - [Favicon](https://favicon.io) 
   - To include an icon on my tab.
@@ -235,6 +222,10 @@ on how to deploy to Github pages.
 #### Images for index.html:
 
 - Card images from [Unsplash](https://unsplash.com/@danielkcheung)
+
+#### Image for web browser tab:
+
+- [ICONS8](https://icons8.com/icons/set/lego)
 
 ### Code
 

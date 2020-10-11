@@ -6,8 +6,15 @@
         box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y:auto;
+}
+
 body {
-    margin: 20px 0;
     background: white;
     font-family: 'Quicksand', sans-serif;
 }
@@ -95,11 +102,11 @@ h2 {
 	display : flex;
 	flex-direction: row;
 	justify-content:space-between;
-    color: #0aa2dc;
+    color: #0aa2dc; 
 }
 
-.move-counter, .timer {
-    padding: 5px;
+.moves, .timer {
+    font-size: 20px;
 }
 
 .restart {
@@ -108,8 +115,8 @@ h2 {
     height: fit-content;
     margin-top: 5px;
     font-family: 'Quicksand', sans-serif;
-    font-size: 16px;
     color: #0aa2dc;
+    font-size: 20px;
 }
 
 .restart:hover {
@@ -125,7 +132,7 @@ h2 {
     border-radius: 0.8rem;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
+    position: absolute;
     bottom: 550px;
     z-index: 1;
     visibility: hidden;
@@ -170,10 +177,12 @@ h2 {
 }
 
 .copyright {
-    height: 50px;
-    width: 250px;
+    height: 30px;
+    width: 210px;
     margin : 0 auto;
+    padding: 30px 0;
 	display : flex;
+    font-size: 15px;
 }
 
 .symbol {
@@ -187,7 +196,7 @@ h2 {
 
 @media (max-width: 414px) {
 	.grid {
-		width: 350px;
+		width: 320px;
 	}
 
     .heading {
@@ -204,7 +213,7 @@ h2 {
     }
 
     .scoreboard {
-        width: 350px;
+        width: 320px;
         height: 50px;
         padding: 15px;
     }
@@ -274,6 +283,7 @@ h2 {
 /* FOR SCREENS 1068px AND LARGER*/
 
 @media (min-width: 1024px) {
+
     .grid {
         width: 960px;
     }
