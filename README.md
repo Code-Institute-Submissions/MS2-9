@@ -1,8 +1,6 @@
 
 # <p align="center">[Use Your Brain!](https://karzuin.github.io/???/)</p>
 
-# <p align="center">Memory Card Game For All</p>
-
 A memory card game featuring images of Star Wars characters in lego form which I found amusing, fun and cute. The game is for users of all ages who 
 would like to improve their memory whilst also enjoy looking at the images too.
 The website consists of the main page with beautiful quality photos, pleasing to the eye, inspiring to look at and simple, not too 
@@ -28,18 +26,17 @@ button.
 1. The user begins at the Home page, reading the simple instructions of 'Click the cards to find the matching pairs' under the 
 main heading 'Use Your Brain!'.
     
-<p align="center"><img width="250" height="300" src="readme-images/ss-index01.jpg"></p>
+<p align="center"><img width="200" height="100" src="readme-images/homepage01.jpg"></p>
 
 2. The user then sees the grid of 16 cards in a 4 by 4 grid, all displaying a photo image of the words "USE YOUR BRAIN",
 these are the cards to be clicked.
-
-<p align="center"><img width="250" height="300" src=""></p>
 
 3. Scrolling down the page further and user sees the scoreboard underneath the images which consists of three features:
 Firstly, a counter to keep track how many clicks the user makes, secondly, a timer displaying in minutes and seconds how long it takes
 for the user to find all the matching pairs to finish the game and finally a restart button where they can choose to start again if 
 they get distracted during the game, get frustrated, or leave the game for any other reason to start again.
-<p align="center"><img width="250" height="300" src=""></p>
+
+<p align="center"><img width="200" height="100" src="readme-images/homepage02.jpg"></p>
 
 4. As soon as the first card is clicked the moves counter and timer begin until all the matching pairs are found or the restart button is clicked.
 
@@ -66,42 +63,19 @@ I used [Pencil](https://pencil.evolus.vn/) to create [wireframes]() in desktop, 
 
 # Features
 
-All three pages consists of a fixed navigation menu bar on top where you can click to go to any of the three pages wherever you are on 
-the current page. The three pages also consist of the same footer with four social links taking them to a new tab with the relevant social 
-media homepage as there are no Greener Homes social media accounts. Underneath is the copyright information.
+The homepage consists of the main heading and the simple, clear instructions of how to play in a smaller heading underneath.
+The card game appears under the heading in a 4 x 4 grid displaying 16 images of a photo with the text saying 'Use Your Brain'
+which inspired me to name the game the same name.
+The card sizes are larger than most card games seen online, as I wanted the images to be seen and appreciated.
+The scoreboard is underneath the grid featuring three tools: 
+- A counter that keeps track of how many moves/ clicks a player makes.
+- A timer that keeps track of how long it takes for the player to finish the game.
+- A restart button, which allows the player to restart the game whenever they want by reloading the page.
+Underneath is the copyright information.
 
-I chose a simple clean font called 'Open Sans' to stay consistent with the overall look of being simple and clean. 
+I chose a simple clean font that matched the image I found with the text Use Your Brain! called 'Quicksand' to stay consistent with the overall look. 
 
-The font colours of grey: `rgb(69, 71, 69)` form background colours in grey `bg-secondary`, button colours in green `bg-success` and 
-social links in green: `rgb(31, 160, 31)` to link the Greener Homes to the colour green.
-
-## [Index.html](https://karzuin.github.io/First-milestone-project/index.html)
-
-This page has a hero image of a beautiful landscape reminding the user of the beauty of the natural environment, inspiring the user to 
-feel calm and to protect the environment. The name of the website ‘Greener Homes’ is displayed, underneath is a concise introduction in the ‘About Us’ section of what 
-the website intends to do.
-
-Next heading is ‘Why live in an eco home’ explaining the benefits of living in such a home and among the many variations of eco homes, 
-this website chooses the three most popular: Earthships, Tiny Houses and Shipping Container Homes. These sections are in a simple and organised 
-format which is easy to read and not overwhelming to the user.
-
-Then the three examples of the eco homes, set in card decks with a beautiful image of each type of home, the name of the type of home and 
-a brief concise summary of its benefits and features. A button at the bottom indicating more information when user hovers over it the button colour
-goes darker green. When clicked it opens a new tab of the external website providing more information and there is a blue border around the
-button to indicate that it has been clicked.
-
-The next section is called ‘Related Interests’ which includes ‘Off Grid Living’, 'Zero Waste Living’ and 'Eco Home Products’ another card 
-deck of three as above to keep the style consistent. Each card has a beautiful and informative image of what the subject is about and a 
-concise description of its benefits and features. A button at the bottom of the card when user hovers over it the button colour goes darker
-green. When clicked it opens into a new tab of the external link providing more information and there is a blue border around the
-button to indicate that it has been clicked.
-
-Then there is the ‘Sign Up’ form inviting the user to enter their email address to sign up for Greener Homes latest news. Reassuring the user 
-that their email address will not be shared with others. A ‘Sign Up!’ Button for the user to click once the email address is entered. 
-If the user clicks the button without entering a valid email address it gives a message to fill in the appropriate field. When user hovers 
-over the button it goes a darker green in colour.
-
-At the bottom of the page is the copyright information.
+The font colours are black, pink and blue which matches the colours of the images. The background colour is white.
 
 # Features Left to Implement
 
@@ -139,7 +113,7 @@ At the bottom of the page is the copyright information.
   - This is used to choose a font style for the website that is simple and modern, found and using Open-Sans font family.
 
 - [Favicon](https://favicon.io) 
-  - To include an icon on my tab.
+  - To include an icon on the web browser tab.
 
 - [StackEdit](https://stackedit.io/) 
   - To write and edit the raw README file.
@@ -168,7 +142,7 @@ Testing information is found on a separate file [TESTING.md](TESTING.md)
 
 8. The page refreshes and goes back to the top of the page, scroll down to ‘Github Pages’ section and find ‘Your site is ready to be published at ________’ with your link. The website is deployed.
 
-   [Follow this link](https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+   [Follow this link]()
 on how to deploy to Github pages.
 
 ### How to run code from my First Milestone Project by cloning in Github to Repl:
@@ -189,7 +163,7 @@ on how to deploy to Github pages.
 
 8. Upload folder or files
 
-### How to run code from my First Milestone Project by cloning in Github to Gitpod:
+### How to run code from my MS2 by cloning in Github to Gitpod:
 
 1. Go to [GitHub.com](https://github.com/)
 
@@ -197,7 +171,7 @@ on how to deploy to Github pages.
 
 3. Click on ‘Repositories’
 
-4. Click on ‘First Milestone Project’
+4. Click on ‘MS2’
 
 5. Click on the green button ‘Clone or download’
 
