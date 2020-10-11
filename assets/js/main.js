@@ -35,6 +35,40 @@ const cardsArray = [
   },
 ];
 
+/*const cardsArray02 = [
+  {
+    name: 'darth vader torturing stormtrooper',
+    img: 'assets/images/lego09.jpg',
+  },
+  {
+    name: 'two stormtroopers',
+    img: 'assets/images/lego10.jpg',
+  },
+  {
+    name: 'darth vader the artist',
+    img: 'assets/images/lego11.jpg',
+  },
+  {
+    name: 'stormtrooper watching laptop',
+    img: 'assets/images/lego12.jpg',
+  },
+  {
+    name: 'space ship',
+    img: 'assets/images/lego13.jpg',
+  },
+  {
+    name: 'stormtroopers and coffee',
+    img: 'assets/images/lego14.jpg',
+  },
+  {
+    name: 'stormtrooper couple',
+    img: 'assets/images/lego15.jpg',
+  },
+  {
+    name: 'darth vader pushing wheelchair',
+    img: 'assets/images/lego16.jpg',
+  },
+];*/
 //Declaring global variables 
 
 let firstGuess = '';
@@ -49,6 +83,7 @@ let matchCount = 0;
 //Duplicates the cards to make 16 and shuffles cards
 let gameGrid = cardsArray.concat(cardsArray);
 gameGrid.sort(() => 0.5 - Math.random());
+
 
 //DOM manipulation - creating divs, and displaying card images
 let game = document.getElementById('game');
@@ -124,7 +159,7 @@ function startTimer() {
 }
 
 //Victory popup for finishing game
- function victoryPopUp(moves, time) {
+ function victoryPopUp(moves) {
     let popUp = document.querySelector('.popUp');
         popUp.style.visibility = "visible";
         popUp.querySelector('.popUpTime').innerHTML = "You won the game in " + minutes + " mins and " + seconds + " secs!";

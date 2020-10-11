@@ -17,6 +17,10 @@ body {
     font-size: 20px;
 }
 
+h2 {
+    color: #da0da4;
+}
+
 #game {
     margin-bottom: 20px;
 }
@@ -91,6 +95,7 @@ body {
 	display : flex;
 	flex-direction: row;
 	justify-content:space-between;
+    color: #0aa2dc;
 }
 
 .move-counter, .timer {
@@ -104,6 +109,7 @@ body {
     margin-top: 5px;
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
+    color: #0aa2dc;
 }
 
 .popUp {
@@ -158,6 +164,19 @@ body {
     cursor: pointer;
 }
 
+.copyright {
+    height: 50px;
+    width: 250px;
+    margin : 0 auto;
+	display : flex;
+}
+
+.symbol {
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+}
+
 /* -------------MEDIA QUERIES---------------*/
 /* FOR PHONES */
 
@@ -205,13 +224,14 @@ body {
     .playAgain {
         margin-left: 70px;
     }
+
 }
 
 /* FOR TABLETS */
 
 @media (min-width: 768px) {
 	.grid {
-		width: 600px;
+		width: 700px;
 	}
 
     .heading {
@@ -219,8 +239,8 @@ body {
         margin: auto;
     }
     .card, .back, .front {
-        width: 120px;
-        height: 90px;
+        width: 150px;
+        height: 100px;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;

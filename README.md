@@ -3,70 +3,45 @@
 
 # <p align="center">Memory Card Game For All</p>
 
-A website for users who would like to know more about ecologically sustainable houses, environmentally friendly lifestyle and affordable housing. 
-The website consists of a 3 page website with beautiful quality photos, pleasing to the eye, inspiring to look at and simple, not too 
+A memory card game featuring star war characters in lego form which I found amusing, fun and cute. The game is for users of all ages who 
+would like to improve their memory whilst also enjoy looking at the images too.
+The website consists of the main page with beautiful quality photos, pleasing to the eye, inspiring to look at and simple, not too 
 much text, as for myself I don’t like busy looking websites, I like simplicity and beauty. As too much information gets confusing, messy 
 and overwhelming.
 
-I wanted to create a website introducing ecological sustainable homes as it’s something that interests me. To show how beautiful and modern 
-they look, and how affordable they can be. There are many different concepts of eco homes but I decided to show three of my favourites which 
-are Earthships, Tiny Houses, and Shipping Container Homes as I wanted to keep it simple. Aiming at those who are beginning to be curious 
-about ecological, sustainable housing it will introduce ideas such as buying an eco home, self-building their own home, information about 
-three types of ecologically sustainable homes available, although there are many more types of eco homes.
-
-Reasons users may be searching for an alternative home or way of living:
-- Change of financial circumstances, downsizing, or wanting to become mortgage free. 
-- User is generally interested in environmental issues concerning housing and lifestyle. 
-- Researching without any intention of buying or self-building but may do so in the future 
-- User is researching ecological sustainable homes for educational purposes and this website is a good start.
-- User is concerned about their environmental footprint and are seeking ideas and inspiration of how to change their everyday lifestyle.
-- User is wanting to be completely self-sufficient and live off the grid as much as possible.
+Reasons users may be want to play this game:
+- To improve their memory. 
+- To pass the time. 
+- Like the humorous quality images. 
 
 # UX
 
-A simple and clean looking website that introduces the user to eco homes and an environmentally friendly lifestyle, consisting of 3 pages:
-- A home page that introduces eco homes with images, brief descriptions and links to quality external websites to save them from clicking 
-through the many results appearing in an internet search. Additional related content of ecological home products, zero waste lifestyle, and off 
-the grid living are also introduced with a brief description and link to an external website giving more information.
-- A resources page that gives further information in researched quality website links, introductory videos of earthships, tiny houses and 
-shipping container homes and recommended books with links to author's website or where to buy the book.
-- A contact us page that allows the user to communicate with the imaginary team to give them more information about anything they found 
-on the Greener Homes website.
-
-
+A simple and clean looking website that introduces the user to a single player memory card game consisting of one page:
+- A black and white, clean, simple look, with succinct instructions and once you start playing the game the colours of the
+images comes through. 
+- When the player has finished/won the game, a popup modal matching the colours of the images appears
+giving the user the time it took for them to finish and how many moves they made and the choice to play again.
+- At the bottom of the card images is a simple  and clean row of a moves counter, minutes and seconds timer and the restart
+button.
 
 ## User journey:
-1. The user begins at the Home page, reading the information about what this website is about and what an eco home is.
+1. The user begins at the Home page, reading the simple instructions of 'Click the cards to find the matching pairs' under the 
+main heading 'Use Your Brain!'.
     
 <p align="center"><img width="250" height="300" src="readme-images/ss-index01.jpg"></p>
 
+2. The user then sees the grid of 16 cards in a 4 by 4 grid, all displaying a photo image of the words "USE YOUR BRAIN",
+these are the cards to be clicked.
 
-2. Scrolling down to the next section where there are images and brief descriptions of what an Earthship, Tiny House and Shipping Container Home is.
-With the choice of clicking on the 'More Info' button or scrolling down to the next section.
+<p align="center"><img width="250" height="300" src=""></p>
 
-<p align="center"><img width="250" height="300" src="readme-images/ss-index02.jpg"></p>
+3. Scrolling down the page further and user sees the scoreboard underneath the images which consists of three features:
+Firstly, a counter to keep track how many clicks the user makes, secondly, a timer displaying in minutes and seconds how long it takes
+for the user to find all the matching pairs to finish the game and finally a restart button where they can choose to start again if 
+they get distracted during the game, get frustrated, or leave the game for any other reason to start again.
+<p align="center"><img width="250" height="300" src=""></p>
 
-3. The next section is called 'Related Interests' where the user is introduced to three more ideas of: Off Grid Living, 
-Zero Waste Living and Eco Home Products. With the choice of clicking on the More Info button or scrolling down to the next section.
-
-<p align="center"><img width="250" height="300" src="readme-images/ss-index03.jpg"></p>
-
-4. At the bottom of the page is a form to sign up to the latest news from Greener Homes and social media links. User can also scroll up and click on 
-the More Info buttons. Or simply click on the navigation menu bar to go to the More Resources page or Contact Us page.
-The user can continue to go to the next page called 'More Resources' page  which gives further information on Earthships, Tiny Houses and Shipping 
-Container Homes via website links, introduction YouTube videos and book resources.
-
-<p align="center"><img width="250" height="300" src="readme-images/ss-resource01.jpg"></p>
-
-5. The website links open in new tabs for the external websites, the video links play on the page or can go to full screen or be played on 
-the YouTube website, and the book recommendations have links that go to external websites to buy the book.
-
- <p align="center"><img width="250" height="300" src="readme-images/ss-resource02.jpg"></p>
-
-6. The third page is the Contact Us page, where there is a form for the user to fill in if they would like to know more about information
-found on the website, or send other comments or messages or click on the social media links or go to another page by clicking on the navbar.
-
-<p align="center"><img width="250" height="300" src="readme-images/ss-contact.jpg"></p>
+4. As soon as the first card is clicked the moves counter and timer begin until all the matching pairs are found or the restart button is clicked.
 
 ## User stories:
 
@@ -76,41 +51,18 @@ found on the website, or send other comments or messages or click on the social 
 
 - As a user, I want to be able to use it on desktop, tablet and mobile devices.
 
-- As a user, I want to find out what eco homes are.
+- As a user, I want to have a fun time playing the game.
 
-- As a user, I am interested in one of the three eco home concepts introduced and would like to know more.
+- As a user, I want to see interesting and fun images some easy to memorise and some not so easy.
 
-- As a user, I want to find out more about one of the related interests introduced on the Home page.
+- As a user, I want simple instructions.
 
-- As a user, I would like to sign up to Greener Homes latest news.
+The user’s goals can be met via this website as it gives a fun and interesting.
 
-- As a user, I want to know further more about one of the eco homes introduced on the Home page.
-
-- As a user, I want to watch an informative video of one of the eco home concepts.
-
-- As a user, I want to know what kind of resources are available to help me know more about eco homes.
-
-- As a user, I want to find more information, so would like to contact Greener Homes via the contact page.
-
-- As a user, I have read through the information of the home page and feel this is too much change in my life but still want to change a 
-small part of my lifestyle and want to know what eco products I can buy.
-
-- As a user, I want to know the cost of an earthship, tiny house or shipping container home in the UK.
-
-The user’s goals can be met via this website as it gives an introduction to these concepts as well as direction to further quality online 
-resources in website links, video links and recommended books.
-
-As this subject area is quite vast it was important to keep it simple looking and in content too as to not overwhelm beginners. 
-Most websites I have found are full of information and the user experience feels overloaded by the information with the cramped layouts 
-and popping adverts, having to click them to close.
-
-It is easy to navigate with the navbar fixed on top, so the user can choose to go to another page wherever they are on the current page.
-
-All links open into a new tab so the user will not forget Greener Homes website and can go back to it easily.
-
+It is easy to navigate with one page, simple, clear and succinct instructions and self explanatory restart button.
 ## Wireframes
-I used [Balsamiq](https://balsamiq.com/) to create
-[wireframes](https://github.com/karzuin/First-milestone-project/tree/master/wireframes) in desktop, tablet and phone view.
+I used [Pencil](https://pencil.evolus.vn/) to create
+[wireframes](https://github.com/karzuin/MS2/tree/master/wireframes) in desktop, tablet and phone view.
 
 # Features
 
@@ -123,7 +75,7 @@ I chose a simple clean font called 'Open Sans' to stay consistent with the overa
 The font colours of grey: `rgb(69, 71, 69)` form background colours in grey `bg-secondary`, button colours in green `bg-success` and 
 social links in green: `rgb(31, 160, 31)` to link the Greener Homes to the colour green.
 
-## [Home.html](https://karzuin.github.io/First-milestone-project/index.html)
+## [Index.html](https://karzuin.github.io/First-milestone-project/index.html)
 
 This page has a hero image of a beautiful landscape reminding the user of the beauty of the natural environment, inspiring the user to 
 feel calm and to protect the environment. The name of the website ‘Greener Homes’ is displayed, underneath is a concise introduction in the ‘About Us’ section of what 
@@ -152,42 +104,7 @@ over the button it goes a darker green in colour.
 At the bottom of the page is a neat row of social links consisting of Facebook, Twitter, Instagram and Youtube and underneath is
 the copyright information.
 
-## [Resources.html](https://karzuin.github.io/First-milestone-project/resources.html)
 
-Under the navbar is a hero image of a row of lightbulbs giving the user a visual cue that this page is for ideas to inspire and inform them. 
-Again the heading ‘Greener Homes’ underneath to keep the style consistent. A brief introduction of what the page consists of to help them 
-understand more about the page.
-
-Next section is a heading introducing ‘Website Links’ with three group lists of links, first list for Earthships, second list for Tiny 
-Houses and the third list for Shipping Container Homes. When user hovers over a link the colour changes to a darker shade of green. Each 
-link has been weeded out from a large result of online searches saving the user time from doing that. Each link opens up into a new tab 
-of the external website. When the link is clicked it shows a blue border to indicate that was the last link clicked, which is useful for 
-when the user goes back to the page.
-
-Next section is for the ‘Video Links’, for people who don’t want to read and prefer to watch a small video introducing the three different 
-concepts of eco homes. Each one plays on the page, or click the fullscreen icon or a link to play on YouTube website.
-
-Finally, there is the 'Book Resources’ section with five cards each with an image of the book cover and a name of what kind of book it is 
-and then a link to an external website either the author’s website or where to buy it. When the link is clicked it opens into a new tab so 
-the user does not forget the Greener Homes website.
-
-At the bottom of the page is a neat row of social links consisting of Facebook, Twitter, Instagram and Youtube and underneath is
-the copyright information.
-
-## [Contact.html](https://karzuin.github.io/First-milestone-project/contact.html)
-
-This is a simple page with a hero image of a beautiful earthship eco home to inspire the user, again the heading title of ‘Greener Homes’ 
-to keep the style consistent. Underneath the section is introduced with a heading ‘Let’s Get in Touch!’ with a little content explaining 
-to the user that if they would like some more information or other resources to please fill in the form below.
-
-Again like in the previous form on the home page reassuring the user that their email will not be shared with anyone else.
-
-The form is validated so that the user has to fill in the different sections of the form before they move onto the next part, to finally
-submit it. When the user clicks any of the fiels a thin blue border appears. When the user hovers over the 'Submit' button the colour 
-changes to a darker green.
-
-At the bottom of the page is a neat row of social links consisting of Facebook, Twitter, Instagram and Youtube and underneath is
-the copyright information.
 
 # Features Left to Implement
 
@@ -212,9 +129,6 @@ eco home products.
 - [HTML 5](https://en.wikipedia.org/wiki/HTML5) and [CSS 3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) 
   - The programming languages used for this project.
 
-- [Bootstrap](https://getbootstrap.com/) 4 CDN 
-  - To be easily responsive, navbar, the list groups, card decks and forms were used to give a clean, simple and ordered look. I wanted to re-inforce what I had learnt from the UCFD module.
-
 - [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) 
   - To see visually the elements of what each code produced, what happens if code is changed, and responsiveness of different device sizes.
 
@@ -235,9 +149,6 @@ eco home products.
 
 - [YouTube](https://youtube.com) 
   - Videos from this website were embedded on the resource page.
-
-- [Imgur](https://imgur.com) 
-  - Used to resize my photo images.
 
 - [Favicon](https://favicon.io) 
   - To include an icon on my tab.
