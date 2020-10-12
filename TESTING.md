@@ -66,7 +66,8 @@ In mobile phone mode,
 [Mozilla Firefox](https://www.mozilla.org/en-GB/firefox/new/) and [Internet Explorer](https://www.microsoft.com/en-gb/download/internet-explorer.aspx) browsers responsiveness is good on desktop, tablet and phone. Only difference found 
 is the website links on the 'Resources page' where the blue border does not appear but when clicked the cell is a darker shade of green and stays that way when the user come back the Greener Homes site.
 
-[Safari](https://www.apple.com/uk/safari/) browser responsiveness is the same as Chrome browser, no bugs.
+[Safari](https://www.apple.com/uk/safari/) the cards were flipping but showing the inverted image of use your brain, i had commented out code that 
+the css browser validator autoprefixer told me was invalid, have uncommented them.
 
 ## Bugs whilst creating the website:
 

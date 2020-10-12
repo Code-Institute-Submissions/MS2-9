@@ -2,7 +2,7 @@
 *,
 *::before,
 *::after {
-    /*-webkit-box-sizing: border-box;*/
+    -webkit-box-sizing: border-box;
         box-sizing: border-box;
 }
 
@@ -39,20 +39,20 @@ h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-   /* -ms-flex-wrap: wrap;*/
+   -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    /*-webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;*/
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
 }
 
 /* Code taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
 .card {
     position: relative;
-    /*-webkit-transition: all .4s linear;
-    -o-transition: all .4s linear;*/
+    -webkit-transition: all .4s linear;
+    -o-transition: all .4s linear;
     transition: all .4s linear;
-    /*-webkit-transform-style: preserve-3d;*/
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     margin: 2px;
 }
@@ -65,7 +65,7 @@ h2 {
 /* Code taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
 .back, .front {
     position: absolute;
-    /*-webkit-backface-visibility: hidden;*/
+    -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
 }
 
@@ -75,7 +75,7 @@ h2 {
 
 /* Code taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
 .back {
-    /*-webkit-transform: rotateY(180deg);*/
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -84,7 +84,7 @@ h2 {
 
 /* Code taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
 .selected {
-    /*-webkit-transform: rotateY(180deg);*/
+    -webkit-transform: rotateY(180deg);
         transform: rotateY(180deg);
 }
 /* keeps matched cards visible*/

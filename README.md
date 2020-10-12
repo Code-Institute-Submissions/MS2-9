@@ -141,7 +141,7 @@ Testing information is found on a separate file [TESTING.md](TESTING.md)
 
 6. Scroll down to the ‘Github Pages’ section.
 
-7. Under the ‘Source’ heading there is a dropdown menu click on ‘None’, and select ‘Master Branch’.
+7. Under the ‘Source’ heading there is a dropdown menu click on ‘None’, and select ‘Master Branch’. Click on save.
 
 8. The page refreshes and goes back to the top of the page, scroll down to ‘Github Pages’ section and find ‘Your site is ready to be published at ________’ with your link. The website is deployed.
 
