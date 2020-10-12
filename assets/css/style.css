@@ -191,7 +191,7 @@ h2 {
 
 /* -------------MEDIA QUERIES---------------*/
 /* FOR PHONES */
-@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+@media screen and (max-device-width: 480px)
 { @media (max-width: 414px) {
 
 	.grid {
