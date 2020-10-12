@@ -102,11 +102,9 @@ let selected = document.querySelectorAll('.selected');
   });
 };
 
-//Counts the number of moves
+//Move counter function
 let moves = 0;
 let counter = document.querySelector(".moves");
-
-//Move counter function
 function moveCounter() {
     moves++;
     counter.innerHTML = moves + ' moves'; 

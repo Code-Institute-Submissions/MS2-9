@@ -1,5 +1,5 @@
 
-# <p align="center">[Use Your Brain!](https://karzuin.github.io/???/)</p>
+# <p align="center">[Use Your Brain! *IN EDITING MODE*](https://karzuin.github.io/???/)</p>
 
 A memory card game featuring images of Star Wars characters in lego form which I found amusing, fun and cute. The game is for users of all ages who 
 would like to improve their memory whilst also enjoy looking at the images too.
@@ -26,7 +26,7 @@ button.
 1. The user begins at the Home page, reading the simple instructions of 'Click the cards to find the matching pairs' under the 
 main heading 'Use Your Brain!'.
     
-<p align="center"><img width="200" height="100" src="readme-images/homepage01.jpg"></p>
+<p align="center"><img width="200" height="100" src="readme-images/homepage01.png"></p>
 
 2. The user then sees the grid of 16 cards in a 4 by 4 grid, all displaying a photo image of the words "USE YOUR BRAIN",
 these are the cards to be clicked.
@@ -36,7 +36,7 @@ Firstly, a counter to keep track how many clicks the user makes, secondly, a tim
 for the user to find all the matching pairs to finish the game and finally a restart button where they can choose to start again if 
 they get distracted during the game, get frustrated, or leave the game for any other reason to start again.
 
-<p align="center"><img width="200" height="100" src="readme-images/homepage02.jpg"></p>
+<p align="center"><img width="200" height="100" src="readme-images/homepage02.png"></p>
 
 4. As soon as the first card is clicked the moves counter and timer begin until all the matching pairs are found or the restart button is clicked.
 
@@ -53,6 +53,8 @@ they get distracted during the game, get frustrated, or leave the game for any o
 - As a user, I want to see interesting and fun images some easy to memorise and some not so easy.
 
 - As a user, I want simple instructions.
+
+- As a user, I want to challenge my brain and exercise my memory.
 
 The user’s goals can be met via this website as it is a simple game with fun and interesting images.
 
@@ -91,13 +93,14 @@ The font colours are black, pink and blue which matches the colours of the image
 - [GitHub](github.com/) 
   - The remote hosting platform. 
 
-- [HTML 5](https://en.wikipedia.org/wiki/HTML5) and [CSS 3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) 
+- [HTML 5](https://en.wikipedia.org/wiki/HTML5), [CSS 3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) and 
+[JavaScript](https://www.javascript.com/)
   - The programming languages used for this project.
 
 - [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) 
   - To see visually the elements of what each code produced, what happens if code is changed, and responsiveness of different device sizes.
 
-- [Autoprefixer](https://autoprefixer.github.io/) and [Browserl.ist](https://browserl.ist/) 
+- [Autoprefixer](https://autoprefixer.github.io/)
   - To check CSS browser compatibility.
 
 - [Jigsaw](https://jigsaw.w3.org/css-validator) 
