@@ -104,7 +104,7 @@ let selected = document.querySelectorAll('.selected');
 
 //Move counter function
 let moves = 0;
-let counter = document.querySelector(".moves");
+let counter = document.querySelector('.moves');
 function moveCounter() {
     moves++;
     counter.innerHTML = moves + ' moves'; 
@@ -116,18 +116,18 @@ let timer; //stores the setInterval
 function startTimer() {
     timer = setInterval(function() {
     time++;
-    minutes = ("0" + Math.floor(time / 60)).slice(-2);
-    seconds = ("0" + time % 60).slice(-2); 
-    document.querySelector('.timer').innerHTML = minutes + ":" + seconds;
+    minutes = ('0' + Math.floor(time / 60)).slice(-2);
+    seconds = ('0' + time % 60).slice(-2); 
+    document.querySelector('.timer').innerHTML = minutes + ':' + seconds;
   }, 1000);
 }
 
 //Victory popup for finishing game
  function victoryPopUp(moves) {
     let popUp = document.querySelector('.popUp');
-        popUp.style.visibility = "visible";
-        popUp.querySelector('.popUpTime').innerHTML = "You won the game in " + minutes + " mins and " + seconds + " secs!";
-        popUp.querySelector('.popUpMoves').innerHTML = "You made " + moves + " moves!"
+        popUp.style.visibility = 'visible';
+        popUp.querySelector('.popUpTime').innerHTML = 'You won the game in ' + minutes + ' mins and ' + seconds + ' secs!';
+        popUp.querySelector('.popUpMoves').innerHTML = 'You made ' + moves + ' moves!';
 };
 
 //Event listener code below taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/ and modified
