@@ -93,9 +93,6 @@ when it is clicked.
 
 The copyright information is also clear and centred at the bottom of the page.
 
-- **Bug**: 
-- **Debugged**
-
 ## [Index.html](https://karzuin.github.io/MS2/) in iPhone X, 5, 6, 7, 8, Galaxy S5, Moto G4 view.
 
 In mobile phone mode, the heading and instructions is clear, well spaced out and centred on the page. 
@@ -130,10 +127,10 @@ The copyright information is also clear and centred at the bottom of the page.
 [Google Chrome](https://google.com) all the testing information has been tested on Chrome browser using DevTools.
 
 [Mozilla Firefox](https://www.mozilla.org/en-GB/firefox/new/)
-    -**Bug**: Popup modal does not display any border.
+- **Bug**: Popup modal does not display any border.
 
 [Internet Explorer](https://www.microsoft.com/en-gb/download/internet-explorer.aspx) 
-- **Bug**: Does not support, the only thing that displays is the text
+- **Bug**: Does not support, the only thing that displays is the text.
 
 [Safari](https://www.apple.com/uk/safari/) 
 - **Bug**: The cards were flipping but showing the inverted image of use your brain image rather than 
@@ -143,6 +140,23 @@ the lego image, I had commented out code that the css browser validator autopref
 
 ## Bugs whilst creating the website:
 
+- **Bug**: Wanted the timer to stop when all the cards were matched and was trying to figure out how to do that.
+- **Debugged**: But then realised it was redundant as I also wanted to have a victory popup modal when all the cards were matched displaying 
+the time and how many moves made. When this was implemented it stops the timer as well.
+
+- **Bug**: There was a blank space between the copyright info and the scoreboard, the popup modal was creating the white space found out from 
+[Stack Overflow](https://stackoverflow.com/questions/6699759/how-to-insert-a-popup-modal-without-creating-unnecessary-white-space)
+- **Debugged**: But decided to keep the white space as when the modal pops up it covers the images and after matching them all, I would like 
+to see them all before I start again.
+
+- **Bug**: Unable to find how to resize images in markdown.
+
+- **Bug**: If user doesn't scroll down then they don’t see the victory popup.
+- **Debugged**: Put a solid border around it, so it will be visible when the game finishes as it appears just under the scoreboard.
+
 
 ## Bugs to be fixed:
+
+- **Bug**: Popup modal does not display any border in Firefox browser.
+- **Bug**: Internet Explorer browser does not support, the only thing that displays is the text.
 
