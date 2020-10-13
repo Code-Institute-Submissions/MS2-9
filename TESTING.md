@@ -63,8 +63,9 @@ In mobile phone mode,
 
 [Google Chrome](https://google.com) all the testing information has been tested on Chrome browser using DevTools.
 
-[Mozilla Firefox](https://www.mozilla.org/en-GB/firefox/new/) and [Internet Explorer](https://www.microsoft.com/en-gb/download/internet-explorer.aspx) browsers responsiveness is good on desktop, tablet and phone. Only difference found 
-is the website links on the 'Resources page' where the blue border does not appear but when clicked the cell is a darker shade of green and stays that way when the user come back the Greener Homes site.
+[Mozilla Firefox](https://www.mozilla.org/en-GB/firefox/new/) and 
+
+[Internet Explorer](https://www.microsoft.com/en-gb/download/internet-explorer.aspx) does not support, the only thing that displays is the text
 
 [Safari](https://www.apple.com/uk/safari/) the cards were flipping but showing the inverted image of use your brain image rather than the lego image, 
 I had commented out code that the css browser validator autoprefixer told me was invalid, have uncommented them and the game works on safari now.
