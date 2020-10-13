@@ -65,7 +65,7 @@ The user’s goals can be met via this website as it is a simple game with fun a
 It is easy to navigate with one page, simple, clear and succinct instructions and self explanatory restart button.
 
 ## Wireframes
-I used [Pencil](https://pencil.evolus.vn/) to create [wireframes]() in desktop, tablet and phone view.
+I used [Pencil](https://pencil.evolus.vn/) to create [wireframes](https://github.com/karzuin/MS2/tree/master/wireframes) in desktop, tablet and phone view.
 
 # Features
 
