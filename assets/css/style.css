@@ -1,4 +1,4 @@
-/* Code taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
+/* Code from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
 *,
 *::before,
 *::after {
@@ -32,7 +32,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Code taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
+/* Code from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
 .grid {
     max-width: 960px;
     margin: 0 auto;
@@ -46,7 +46,7 @@ h2 {
     justify-content: space-evenly;
 }
 
-/* Code taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
+/* Code from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
 .card {
     position: relative;
     -webkit-transition: all .4s linear;
@@ -62,7 +62,7 @@ h2 {
     width: 200px;
 }
 
-/* Code taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
+/* Code from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
 .back, .front {
     position: absolute;
     -webkit-backface-visibility: hidden;
@@ -73,7 +73,7 @@ h2 {
     background: url('../images/useyourbrain.jpg') no-repeat center center / contain;
 }
 
-/* Code taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
+/* Code from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
 .back {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
@@ -82,11 +82,12 @@ h2 {
     background-position: center center;
 }
 
-/* Code taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
+/* Code from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/*/
 .selected {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
+
 /* keeps matched cards visible*/
 .match, .back {
     transform: rotateY(180deg);
@@ -134,8 +135,7 @@ h2 {
     margin: 0 auto;
     position: relative;
     z-index: 1;
-    visibility: hidden;
-    
+    visibility: hidden;  
 }
 
 .popUpText {
@@ -255,6 +255,7 @@ h2 {
         width: 500px;
         margin: auto;
     }
+
     .card, .back, .front {
         width: 150px;
         height: 100px;

@@ -45,7 +45,7 @@ let delay = 1200;
 let timerOn = false;
 let matchCount = 0;
 
-//DOM manipulation code below taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/ 
+//DOM manipulation code below from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/ 
 //Duplicates the cards to make 16 and shuffles cards
 let gameGrid = cardsArray.concat(cardsArray);
 gameGrid.sort(() => 0.5 - Math.random());
@@ -79,7 +79,7 @@ let back = document.createElement('div');
     card.appendChild(back);
 });
 
-//Match function code below taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/ 
+//Match function code below from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/ 
 //Declaring match function
 let match = function match() {
     matched = document.querySelectorAll('.selected');
@@ -88,7 +88,7 @@ let match = function match() {
   });
 };
 
-//Declaring reset card and selected function code below taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/ 
+//Declaring reset card and selected function code below from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/ 
 //Declaring reset cards function
 let resetGuesses = function resetGuesses() {
     firstGuess = '';
@@ -112,7 +112,7 @@ function moveCounter() {
 
 //Timer
 let time = 0;
-let timer; //stores the setInterval
+let timer;
 function startTimer() {
     timer = setInterval(function() {
     time++;
@@ -130,7 +130,7 @@ function startTimer() {
         popUp.querySelector('.popUpMoves').innerHTML = 'You made ' + moves + ' moves!';
 };
 
-//Event listener code below taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/ and modified
+//Event listener code below from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/ and modified
 //Create click event listener, calling match, reset functions
 grid.addEventListener('click', function (event) {
 
@@ -141,7 +141,7 @@ grid.addEventListener('click', function (event) {
         timerOn = true;
     }
 
-//Stop function code below taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/ 
+//Stop function code below from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/ 
 
     if (clicked.nodeName === 'SECTION' || //selects divs inside the grid section
         clicked === previousTarget || //ignore if the same card is clicked again
@@ -151,7 +151,7 @@ grid.addEventListener('click', function (event) {
     return; //stops function
   }
 
-//Count and select code below taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/ and modified
+//Count and select code below from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/ and modified
 
   if (count < 2) {
         count++;
@@ -164,7 +164,7 @@ grid.addEventListener('click', function (event) {
       clicked.parentNode.classList.add('selected');
     }
 
-//Compare for match and reset code below taken from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/ 
+//Compare for match and reset code below from https://www.taniarascia.com/how-to-create-a-memory-game-super-mario-with-plain-javascript/ 
 //and modified
 
     //Call match function, delays for reset
