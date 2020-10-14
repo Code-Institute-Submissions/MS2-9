@@ -164,7 +164,7 @@ the time and how many moves made. When this was implemented it stops the timer a
 - **Debugged**: But decided to keep the white space as when the modal pops up it covers the images and after matching them all, I would like 
 to see them all before I start again.
 
-- **Bug**: Unable to find how to resize images in markdown.
+- **Bug**: Unable to find how to resize images in markdown so used html.
 
 - **Bug**: If user doesn't scroll down then they don’t see the victory popup.
 - **Debugged**: Put a solid border around it, so it will be visible when the game finishes as it appears just under the scoreboard.

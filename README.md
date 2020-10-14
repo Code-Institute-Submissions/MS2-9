@@ -38,7 +38,7 @@ if they get distracted during the game, get frustrated, or leave the game for an
 
 4. As soon as the first card is clicked the moves counter and timer begin until all the matching pairs are found or the restart button is clicked.
 
-5. When all the pairs of cards have been matched a victory popup modal appears with a congratulaing message and displays the time it took for 
+5. When all the pairs of cards have been matched a victory popup modal appears with a congratulating message and displays the time it took for 
 the player to finish and how many moves they made and a button to click if the player chooses to play again. The popup appears under the card deck
 instead of on top because then the user can enjoy looking at all the images when they have finished.
 
@@ -71,10 +71,6 @@ for me to finish the game. It should also have a button to play the game again.
 
 - As a user, I want to challenge my brain and exercise my memory.
 
-The user’s goals can be met via this website as it is a simple game with fun and interesting images.
-
-It is easy to navigate with one page, simple, clear and succinct instructions and self explanatory restart button.
-
 ## Wireframes
 I used [Pencil](https://pencil.evolus.vn/) to create [wireframes](https://github.com/karzuin/MS2/tree/master/wireframes) in desktop, tablet and phone view.
 
@@ -88,7 +84,7 @@ The card sizes are larger than most card games seen online, as I wanted the imag
 
 The scoreboard is underneath the grid featuring three tools: 
 - A counter that keeps track of how many moves/ clicks a player makes.
-- A timer that keeps track of how long it takes for the player to finish the game.
+- A timer in mintues and seconds that keeps track of how long it takes for the player to finish the game.
 - A restart button, which allows the player to restart the game whenever they want by reloading the page.
 Underneath is the copyright information.
 
@@ -216,7 +212,9 @@ on how to deploy to Github pages.
 
 #### Images for index.html:
 
-- Card images from [Unsplash](https://unsplash.com/@danielkcheung)
+- Card images Lego characters from [Unsplash](https://unsplash.com/@danielkcheung)
+
+- Card image 'Use Your Brain' from [Unsplash](https://unsplash.com/photos/Iod3vdjKE1E)
 
 #### Image for web browser tab:
 
