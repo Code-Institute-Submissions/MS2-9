@@ -28,8 +28,7 @@ Used[JShint](https://jshint.com/) website.
 
 - As a user, I want to be able to use it on desktop, tablet and mobile devices.
     - The user can use it on these devices via Chrome, Safari, and Firefox browsers.
-    **Bug**: It doesn't work on Internet Explorer.
-
+    
 - As a user, I want to have a fun time playing the game.
     - The user, if they find the images fun and amusing will enjoy playing the game.
 
