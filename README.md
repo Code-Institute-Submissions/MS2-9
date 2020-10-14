@@ -52,7 +52,18 @@ instead of on top because then the user can enjoy looking at all the images when
 
 - As a user, I want to be able to use it on desktop, tablet and mobile devices.
 
-- As a user, I want to have a fun time playing the game.
+- As a user, I want to have a counter to keep track of how many moves I make to finish the game.
+
+- As a user, I want to have a timer to keep track of how long it takes to finish the game.
+
+- As a user, I want to have a restart button that resets all the features whenever I want.
+
+- As a user, I want a victory popup message to tell me when I've finished the game, displaying how many moves I made and the time it took
+for me to finish the game. It should also have a button to play the game again.
+
+- As a user, I want to see interesting, quality images.
+
+- As a user, I don't want the popup message to cover the images when I've finished the game so I can see them all properly.
 
 - As a user, I want to see interesting and fun images some easy to memorise and some not so easy.
 

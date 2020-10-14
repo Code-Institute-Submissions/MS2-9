@@ -29,8 +29,27 @@ Used[JShint](https://jshint.com/) website.
 - As a user, I want to be able to use it on desktop, tablet and mobile devices.
     - The user can use it on these devices via Chrome, Safari, and Firefox browsers.
     
-- As a user, I want to have a fun time playing the game.
-    - The user, if they find the images fun and amusing will enjoy playing the game.
+- As a user, I want to have a counter to keep track of how many moves I make to finish the game.
+    - The user can see that there is a moves counter on the scoreboard which begins to count at the first click of a card.
+
+- As a user, I want to have a timer to keep track of how long it takes to finish the game.
+    - The user can see that there is a minute and seconds timer that begins in seconds counting up when the first click is made 
+    and continues until the game is finished or the restart button is clicked.
+
+- As a user, I want to have a restart button that resets all the features whenever I want.
+    - The user can see there is a restart button which can be clicked anytime during the game, which reloads the page, resetting 
+    the timer, counter and shuffles the cards.
+
+- As a user, I want a victory popup message to tell me when I've finished the game, displaying how many moves I made and the time it took
+for me to finish the game. The timer and counter stops. It should also have a button to play the game again.
+    - The user will see that a popup message appears when all the cards are matched congratulating the player and displaying the time it took
+    to finish and how many moves they made, corresponding to the point at where the timer and counter stops. 
+
+- As a user, I don't want the popup message to cover the images when I've finished the game so I can see them all properly.
+   - The user can see when the popup message appears it is below the scoreboard not covering the images at all.
+
+- As a user, I want to see interesting, quality images.
+    The user can see that when the cards are displayed the images are photos of characters and with backgrounds and of clear and good quality.
 
 - As a user, I want to see interesting and fun images some easy to memorise and some not so easy.
     - The user will find some of the images are similar so will find it harder to memorise and others quite easy and distinct from 
@@ -118,16 +137,12 @@ when it is clicked.
 
 The copyright information is also clear and centred at the bottom of the page.
 
-
- 
-
-
 # Responsiveness on different browsers:
 
 [Google Chrome](https://google.com) all the testing information has been tested on Chrome browser using DevTools.
 
 [Mozilla Firefox](https://www.mozilla.org/en-GB/firefox/new/)
-- **Bug**: Popup modal does not display any border.
+- **Bug**: Popup modal does not display the black border.
 
 [Internet Explorer](https://www.microsoft.com/en-gb/download/internet-explorer.aspx) 
 - **Bug**: Does not support, the only thing that displays is the text.

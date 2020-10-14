@@ -13,23 +13,31 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<!-------HEADING-------->
     <div class="heading">
         <h1>USE YOUR BRAIN!</h1>
         <h2>Click the cards to find the matching pair of images</h2>
     </div>
+
+<!------GAME BOARD------>
     <div id="game"></div> 
 
+<!-------SCORE BOARD------>
      <div class="scoreboard">
         <div class="moves">0 moves</div>
         <div class="timer">00:00</div>
         <button type="button" class="restart" onclick="startGame()">Restart</button> 
     </div>
+
+<!-------VICTORY POPUP------->
     <div class="popUp">
         <div class="popUpText">Congratulations! Genius!</div>
         <div class="popUpTime">You won the game in 45 seconds!</div>
         <div class="popUpMoves">You made 20 moves!</div>
        <button type="button" class="playAgain" onclick="startGame()">Play Again!</button>
     </div>
+
+<!------COPYRIGHT------>
     <footer>
         <div class="copyright"><i class="far fa-copyright symbol"></i> 2020 Karen Yuen</div>
     </footer>
