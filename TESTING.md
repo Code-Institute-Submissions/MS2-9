@@ -6,13 +6,14 @@ Used [W3C HTML validator](https://validator.w3.org/#validate_by_input) website v
 
 <p align="center"><img width="350" height="300" src="readme-images/html_valid.png"></p>
 
-Used [Jigsaw](https://jigsaw.w3.org/css-validator/#validate_by_input) via the direct input path. 
+Used [Jigsaw](https://jigsaw.w3.org/css-validator/#validate_by_input) website via the direct input path. 
 
 2. Style.css validator results.
 
 <p align="center"><img width="350" height="300" src="readme-images/css_valid.png"></p>
 
-3. JShint validator results.
+Used[JShint](https://jshint.com/) website.
+3. main.js validator results.
 
 <p align="center"><img width="350" height="300" src="readme-images/jshint_valid.png"></p>
 

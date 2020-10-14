@@ -123,7 +123,7 @@ The font colours of the popup are also the pink and blue that are used in the he
   - This library was used for the copyright icons.
 
 - [Google Fonts](https://fonts.google.com/) 
-  - This is where I found and site is using the Quicksand font family.
+  - This is where I found the Quicksand font family.
 
 - [Favicon](https://favicon.io) 
   - To include a lego icon on the web browser tab.
@@ -142,7 +142,7 @@ Testing information is found on a separate file [TESTING.md](TESTING.md)
 
 3. Click on ‘Repositories’
 
-4. Click on ‘MS2t’
+4. Click on ‘MS2’
 
 5. Click on ‘Settings’
 
